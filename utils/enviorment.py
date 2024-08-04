@@ -172,6 +172,9 @@ class Furniture(RoomObject):
         assert (create_key == Furniture.__create_key), \
             "Room objects should be created via create method"
 
+        super().__init__(room)
+
+
         self._width: float = width
         self._length: float = length
         self._height = height
@@ -206,9 +209,6 @@ class Furniture(RoomObject):
                  center.y - self._length / 2 - self._clearance_values[1]]
             )
         )
-
-        super().__init__(room)
-
     def get_polygon(self) -> Polygon:
         return self._polygon
 

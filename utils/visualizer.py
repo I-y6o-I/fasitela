@@ -16,7 +16,7 @@ WALL_VECTOR_SCALE: int = MathConstants.wall_vector_scale.value
 def visualize(room: Room, additional_objects: list = ()) -> tp.NoReturn:
     objects = [obj.get_polygon() for obj in room.get_objects()]
     clearance_bounds = [obj.get_clearance_bounds() for obj in room.get_objects()]
-    clearance_bounds.extend([obj.get_clearance_bounds() for obj in room.get_walls()])
+    # clearance_bounds.extend([obj.get_clearance_bounds() for obj in room.get_walls()])
     object_front_vectors = [arrow_2d(obj.get_center(), obj.get_front_vector() * OBJECT_VECTOR_SCALE)
                             for obj in room.get_objects()]
     walls_front_vectors = [arrow_2d(wall.get_center(), wall.get_front_vector() * WALL_VECTOR_SCALE)

@@ -24,13 +24,13 @@ tumba = Furniture.create(room,
                          10,
                          Point(np.array([10, 30])),
                          np.array([10, 0, 0, 0]))
-# tumba.rotate(np.radians(-25))
+tumba.rotate(np.radians(-25))
 # divan.rotate(np.radians(45))
 # tumba.move(np.array([-5, -13]))
-# tumba.snap_to_closest_furniture()
+tumba.snap_to_closest_furniture()
 # divan.snap_to_closest_furniture()
 
-# print(room.compute_clearance_metric())
+print(room.compute_clearance_metric())
 
 
 

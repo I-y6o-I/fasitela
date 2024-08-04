@@ -1,0 +1,6 @@
+betterconf==2.6.1
+numpy==1.26.4
+pyclipper==1.3.0.post5
+Shapely==2.0.2
+sympy==1.12
+sympy_plot_backends==3.0.1
